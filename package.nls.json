@@ -1,0 +1,6 @@
+{
+  "package.displayName": "QR Code View",
+  "command.show-preview": "Show QR Code View",
+  "msg.warning.activeTextEditorIsNull": "Active Document is not exists.",
+  "msg.info.qr-code-view": "QR Code View"
+}

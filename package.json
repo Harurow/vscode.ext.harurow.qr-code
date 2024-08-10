@@ -1,0 +1,65 @@
+{
+  "name": "qr-code-view",
+  "displayName": "%package.displayName",
+  "description": "%package.description%",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "publisher": "Harurow",
+  "homepage": "https://github.com/Harurow/vscode.ext.harurow.qr-code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Harurow/vscode.ext.harurow.qr-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Harurow/vscode.ext.harurow.qr-code/issues"
+  },
+  "icon": "images/ext-icon.png",
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "show-preview",
+        "title": "%command.show-preview%"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/qrcode": "^1.5.5",
+    "@types/validator": "^13.12.0",
+    "@types/vscode": "^1.92.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "standard-version": "^9.5.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "validator": "^13.12.0"
+  }
+}

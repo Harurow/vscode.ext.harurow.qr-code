@@ -1,0 +1,6 @@
+{
+  "package.displayName": "Harurow UTIL - QR Code",
+  "command.show-preview": "QR Codeビューを表示",
+  "msg.warning.activeTextEditorIsNull": "アクティブなドキュメントがありません",
+  "msg.info.qr-code-view": "QR Code View"
+}
