@@ -1,6 +1,6 @@
 {
   "name": "qr-code-view",
-  "displayName": "%package.displayName",
+  "displayName": "%package.displayName%",
   "description": "%package.description%",
   "version": "1.1.1",
   "license": "MIT",
@@ -20,7 +20,8 @@
     "url": "https://github.com/Harurow/vscode.ext.harurow.qr-code/issues"
   },
   "icon": "images/ext-icon.png",
-  "activationEvents": [],
+  "activationEvents": [
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
