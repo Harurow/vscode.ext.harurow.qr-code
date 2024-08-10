@@ -8,7 +8,3 @@ View Studio Code の拡張。QRコードを表示します。
 
 ![QR Code View](https://github.com/harurow/vscode.ext.harurow.qr-code/blob/main/screenshots/tutorial.gif?raw=true)
 
-## コマンドパレット
-
-コマンドパレットからテキストエディタ用の拡張機能です。
-
