@@ -1,3 +1,14 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.1.0 (2024-08-10)
+
+
+### Features
+
+* さくっと作ってみた ([0468678](https://github.com/Harurow/vscode.ext.harurow.qr-code/commit/0468678e8c80d8025d5050cbbfbb4d7699167fe7))
+
 # Change Log
 
 All notable changes to the "QR Code View" extension will be documented in this file.
