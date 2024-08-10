@@ -1,5 +1,6 @@
 {
   "package.displayName": "QR Code View",
+  "package.description": "Converts text being edited into a QR Code in real time.",
   "command.show-preview": "Show QR Code View",
   "msg.warning.activeTextEditorIsNull": "Active Document is not exists.",
   "msg.info.qr-code-view": "QR Code View"
