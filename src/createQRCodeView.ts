@@ -155,6 +155,15 @@ export async function createQRCodeView(context: vscode.ExtensionContext, textEdi
     documentChangeListener.dispose();
   });
   context.subscriptions.push(webViewDisposeListener);
+  
+  const textEditorCloseListener = vscode.window.onDidChangeVisibleTextEditors((editors) => {
+    if (!editors.includes(textEditor)) {
+      console.log('TextEditor has been closed.');
+      qrCodeWebViewPanel.dispose();
+      textEditorCloseListener.dispose();
+    }
+  });
+  context.subscriptions.push(textEditorCloseListener);
 
   updateWebView(qrCodeWebViewPanel, document, userSettings);
 }
